@@ -2,6 +2,8 @@ package study.exception.business;
 
 /**
  * 过期异常
+ * （1）过期
+ * （2）失效
  *
  * @author wangzhj
  */

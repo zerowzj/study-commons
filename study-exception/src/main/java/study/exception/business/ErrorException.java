@@ -2,6 +2,8 @@ package study.exception.business;
 
 /**
  * 错误异常
+ * （1）错误
+ * （2）不正确
  *
  * @author wangzhj
  */
