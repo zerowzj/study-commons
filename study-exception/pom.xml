@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>study.commons</groupId>
-    <artifactId>study-exception</artifactId>
+    <groupId>study.common</groupId>
+    <artifactId>study-common-exception</artifactId>
     <version>${newVersion}</version>
     <packaging>jar</packaging>
 
@@ -14,16 +14,16 @@
         <nexus.server>114.67.102.8:8081</nexus.server>
     </properties>
 
-    <!-- ============================== -->
-    <!--（★）部署                      -->
-    <!-- ============================== -->
+    <!-- ==================== -->
+    <!--（★）部署            -->
+    <!-- ==================== -->
     <distributionManagement>
         <!--（▲）发布仓库 -->
         <repository>
             <!--id名字可以任意取，但是要与settings文件中的属性<server>的id一致-->
             <id>nexus</id>
             <name>Releases</name>
-            <!--仓库类型为host(宿主仓库），储存类型为release的仓库-->
+            <!--仓库类型为host（宿主仓库），储存类型为release的仓库-->
             <url>http://${nexus.server}/nexus/content/repositories/releases/</url>
         </repository>
         <!--（▲）快照仓库 -->
